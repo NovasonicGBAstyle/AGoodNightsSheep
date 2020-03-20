@@ -23,6 +23,8 @@ public class Sheep : MonoBehaviour {
     private AudioClip bleetClip;
     [SerializeField]
     private AudioClip splatClip;
+    [SerializeField]
+    private AudioClip diedClip;
 
     // Use this for initialization
     void Start () {
@@ -243,9 +245,11 @@ public class Sheep : MonoBehaviour {
             isDead = true;
             GameManager.RemoveSheep(this);
 
+            //Play death sound.
+            audioSource.PlayOneShot(diedClip);
+
             //Start the death coroutine.
             StartCoroutine("DestroySheep");
-            //GetComponent<AudioSource>().PlayOneShot(sheepDeath);
         }
         else
         {

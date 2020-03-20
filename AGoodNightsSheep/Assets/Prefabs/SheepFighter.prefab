@@ -186,6 +186,7 @@ MonoBehaviour:
   audioSource: {fileID: 6629354354524032656}
   bleetClip: {fileID: 8300000, guid: 690fcaf8ecaffe3488b38270363b88d0, type: 3}
   splatClip: {fileID: 8300000, guid: 82167a573760dd34dba81f8faff473f0, type: 3}
+  diedClip: {fileID: 8300000, guid: 6a8bcde330d35284eb9e9eabd2f91b32, type: 3}
 --- !u!82 &6629354354524032656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -197,7 +198,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 690fcaf8ecaffe3488b38270363b88d0, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
@@ -207,7 +208,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

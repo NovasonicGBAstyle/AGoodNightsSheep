@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     [Header("Set in Inspector: UI elements")]
 
     //public GameUI gameUI;
-    public GameObject player;
+    public Player player;
     public int score;
     //This is a timer showing when the next wave will start.
     public int waveCountdown;
@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
     public Text remainingSheepCounter;
     [Tooltip("In game wave counter.")]
     public Text waveBoard;
+    [Tooltip("In game health counter.")]
+    public Text healthBoard;
 
     [Header("Gun Clip Sizes")]
     //Just for fun, I'm thinking about adding a clip size to guns that enforces a reload.  Wouldn't that be interesting?
@@ -161,13 +163,12 @@ public class GameManager : MonoBehaviour
         }
 
         scoreBoard.text = "Score: " + score;
-
-
         remainingSheepCounter.text = "Remaining Sheep: " + sheepList.Count();
+        healthBoard.text = "Remaining Health: " + player.health;
 
         //Debug.Log("currentRoundDefeated: " + currentRoundDefeated + "; numSheep: " + numSheep + "; waveOver: " + waveOver);
         //Now, we'll do some stuff to see if the wave is over.
-        if(currentRoundDefeated == numSheep && !waveOver)
+        if (currentRoundDefeated == numSheep && !waveOver)
         {
             //Yay!  Round Over!
             //Debug.Log("Round Over!");
@@ -176,52 +177,6 @@ public class GameManager : MonoBehaviour
             //UpdateWave();
         }
 }
-
-
-
-    //private void UpdateWave()
-    //{
-    //    ////Debug.Log("Updating the wave.");
-    //    waveBoard.text = "Wave complete!";
-
-    //    //yield return new WaitForSeconds(waveCountdown);
-
-    //    ////We want to show a countdown in the wave board.  So we'll need a timer check.
-    //    ////float waveTimer = Time.time;
-    //    ////while (Time.time - waveTimer < waveCountdown)
-    //    ////{
-    //    ////    waveBoard.text = "Next wave in: " + (Time.time - waveTimer);
-    //    ////}
-
-    //    ////First, increase the wave number
-    //    waveNumber += 1;
-
-    //    ////Update the wave board.
-    //    waveBoard.text = "Wave: " + waveNumber;
-
-    //    //So, this is a cheesy way of only increasing the number of sheep every three rounds.
-    //    singleton.numSheep = singleton.numSheep + ((waveNumber + 3) / 3);
-    //    waveCountdown = 10;
-    //    singleton.currentRoundDefeated = 0;
-    //    singleton.currentRoundGenerated = 0;
-    //    waveOver = false;
-    //    //Debug.Log("Current generated: " + singleton.currentRoundGenerated + "; numSheep: " + singleton.numSheep);
-
-    //    SpawnSheep();
-
-    //    //Start the score coroutine again.
-    //    StartCoroutine("increaseScoreEachSecond");
-
-    //    //Signal the start of a new round.
-    //    NewRoundStart();
-    //}
-
-    #region "UI Buttons"
-
-    public void OnLoadMainMenuClick()
-    {
-        LoadMainMenu();
-    }
 
     /// <summary>
     /// This runs when the game is over.
@@ -241,6 +196,15 @@ public class GameManager : MonoBehaviour
         achievementText.text = "Before going to sleep, you fought off " + sheepDefeated + " sheep!";
         scoreText.text = "Total Score: " + score;
         waveBoard.text = "Current Wave: " + waveNumber;
+    }
+
+
+
+    #region "UI Buttons"
+
+    public void OnLoadMainMenuClick()
+    {
+        LoadMainMenu();
     }
 
     /// <summary>
@@ -293,11 +257,6 @@ public class GameManager : MonoBehaviour
             //What this does is determine that it will spawn a sheep at a random interval between 0 seconds and whatever spawnDelay is set to.
             Invoke("SpawnSheep", UnityEngine.Random.Range(0, spawnDelay));
         }
-        else
-        {
-            Debug.Log("Done creating sheep.");
-        }
-        //gameUI.SetEnemyText(sheepLeft());
     }
 
     /// <summary>
@@ -435,19 +394,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Updating the wave.");
         waveBoard.text = "Wave complete!";
 
-        float waveTimer = Time.time;
-        while (Time.time - waveTimer < waveCountdown)
-        {
-            waveBoard.text = "Next wave in: " + (Time.time - waveTimer);
-        }
         yield return new WaitForSeconds(waveCountdown);
-
-        //We want to show a countdown in the wave board.  So we'll need a timer check.
-        //float waveTimer = Time.time;
-        //while (Time.time - waveTimer < waveCountdown)
-        //{
-        //    waveBoard.text = "Next wave in: " + (Time.time - waveTimer);
-        //}
 
         //First, increase the wave number
         waveNumber += 1;
@@ -456,12 +403,11 @@ public class GameManager : MonoBehaviour
         waveBoard.text = "Wave: " + waveNumber;
 
         //So, this is a cheesy way of only increasing the number of sheep every three rounds.
-        singleton.numSheep = singleton.numSheep + ((waveNumber + 3) / 3);
+        singleton.numSheep += ((waveNumber + 3) / 3);
         waveCountdown = 10;
         singleton.currentRoundDefeated = 0;
         singleton.currentRoundGenerated = 0;
         waveOver = false;
-        Debug.Log("Current generated: " + singleton.currentRoundGenerated + "; numSheep: " + singleton.numSheep);
 
 
         SpawnSheep();
