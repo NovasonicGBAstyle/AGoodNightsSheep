@@ -39,7 +39,7 @@ public class TestControllerReading : MonoBehaviour
                 //Try to check for reload?
                 Debug.Log("Try to check for right reload.");
                 Debug.Log(deviceAngle.ToString());
-                //float angle = Quaternion.Angle(deviceAngle.x, downAngle.x);
+                float angle = Quaternion.Angle(deviceAngle, downAngle);
                 Debug.Log("New angle is: " + angle.ToString());
 
             }

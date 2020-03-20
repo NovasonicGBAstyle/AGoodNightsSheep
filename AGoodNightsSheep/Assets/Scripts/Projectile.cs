@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour {
     /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
-        //Debug.Log("Missle collided with: " + collision.gameObject.tag + " while missle type is: " + missleType);
+        //Debug.Log("Projectile collided with: " + collision.gameObject.tag);
         //First, check to see if a sheep was hit.
         if (collision.gameObject.tag == "Sheep")
         {
@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour {
         //Next, check to see if we hit a wall or the ground.
         else if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Ground")
         {
+
             //It a wall or the ground, so destory the projectile.
             Destroy(gameObject);
         }

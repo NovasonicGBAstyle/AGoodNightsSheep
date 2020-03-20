@@ -16,9 +16,20 @@ public class Sheep : MonoBehaviour {
     private bool isDead;
     public GameManager gameManager;
 
+    //This will be a link to the audio source for the sheep to make it make noise
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip bleetClip;
+    [SerializeField]
+    private AudioClip splatClip;
+
     // Use this for initialization
     void Start () {
         isDead = false;
+
+        //Make the sheep play a sound when it enters.
+        PlayBleet();
     }
 
 
@@ -224,7 +235,9 @@ public class Sheep : MonoBehaviour {
         //Check to see if the sheep has any health left.
         if (health <= 0)
         {
-            //TODO:
+            //If we are dead from taking damage, then provide points.
+            GameManager.IncreaseScore(points);
+
             //Remove this sheep from the flock.  I'm not sure how it get's added to the flock.
             //Set dead boolean to trun and remove this sheep from the flock.
             isDead = true;
@@ -253,11 +266,49 @@ public class Sheep : MonoBehaviour {
             //Debug.Log("I killed the player!");
             collision.gameObject.GetComponent<Player>().TakeDamage(damage);
 
-            //We'll also destroy the sheep at this point.
-            TakeDamage(health);
+            //Just kill this sheep off now.
+            isDead = true;
+            GameManager.RemoveSheep(this);
+            StartCoroutine("DestroySheep");
         }
 
+        //Check to see if a projectile was hit.
+        if(collision.gameObject.tag == "Projectile")
+        {
+            //Play the splat noise.
+            PlaySplat();
+        }
+
+        //Check to see if what was hit was a projectile.
+
     }
+
+    #region "Sounds"
+    /// <summary>
+    /// This will actually play the bleet sound in the audio source.
+    /// </summary>
+    private void PlayBleet()
+    {
+        //Check to make sure the sheep is alive.
+        if (!isDead)
+        {
+            //Play the sound.
+            audioSource.PlayOneShot(bleetClip);
+
+            //Start coroutine to see when to play another sound.
+            StartCoroutine("Bleet");
+        }
+    }
+
+    /// <summary>
+    /// This will play the splat noise in the audio clip.
+    /// </summary>
+    private void PlaySplat()
+    {
+        audioSource.PlayOneShot(splatClip);
+    }
+
+    #endregion
 
     #region CoRoutines
     /// <summary>
@@ -268,6 +319,19 @@ public class Sheep : MonoBehaviour {
     {
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
+    }
+
+    /// <summary>
+    /// This will have the sheep bleet at a random interval between 5 and 15 seconds.
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator Bleet()
+    {
+        //First, determine a time to wait for between 5 and 15 seconds.
+        float waitVal = Random.Range(5, 15);
+        yield return new WaitForSeconds(waitVal);
+
+        PlayBleet();
     }
     #endregion
 }

@@ -21,6 +21,10 @@ public class ControllerInput : MonoBehaviour
     private Text rightGunDisplay;
     [SerializeField]
     private Text leftGunDisplay;
+    [SerializeField]
+    private AudioSource rightGunAudioSource;
+    [SerializeField]
+    private AudioSource leftGunAudioSource;
 
     private GameManager gameManager;
 
@@ -147,7 +151,7 @@ public class ControllerInput : MonoBehaviour
     /// </summary>
     private void StartRound()
     {
-        Debug.Log("Starting a new round happening for ControllerInput.");
+        //Debug.Log("Starting a new round happening for ControllerInput.");
 
         //Set some values so that shots can be fired as soon as the game starts.
         rightLastFire = Time.time - rightReloadRate;
@@ -200,6 +204,9 @@ public class ControllerInput : MonoBehaviour
 
                 //Finally, instantiate the projectile
                 GameObject projectile = Instantiate(rightProjectilePrefab, rightGunBarrel.position, bananaRotation);
+
+                //Play the sound of shooting.
+                rightGunAudioSource.Play();
 
                 //Increase our right shot count.
                 rightShotsFired++;
@@ -294,6 +301,9 @@ public class ControllerInput : MonoBehaviour
 
                 //Finally, instantiate the projectile
                 GameObject projectile = Instantiate(leftProjectilePrefab, leftGunBarrel.position, bananaRotation);
+
+                //Play the sound of shooting.
+                leftGunAudioSource.Play();
 
                 //Increase our left shot count.
                 leftShotsFired++;

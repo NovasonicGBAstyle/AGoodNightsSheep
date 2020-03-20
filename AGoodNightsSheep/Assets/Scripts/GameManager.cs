@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,9 +49,23 @@ public class GameManager : MonoBehaviour
     //public GameUI gameUI;
     public GameObject player;
     public int score;
+    //This is a timer showing when the next wave will start.
     public int waveCountdown;
+    public int waveNumber;
+    public bool waveOver;
     public bool isGameOver;
+    //Canvas for game over stuff.
     public GameObject gameOverPanel;
+    //Game over achievement text box.
+    public Text achievementText;
+    //Game over score box.
+    public Text scoreText;
+
+    //In game scoreboard.
+    public Text scoreBoard;
+    //In game sheep counter for the round.
+    public Text remainingSheepCounter;
+    public Text waveBoard;
 
     [Header("Gun Clip Sizes")]
     //Just for fun, I'm thinking about adding a clip size to guns that enforces a reload.  Wouldn't that be interesting?
@@ -74,6 +89,12 @@ public class GameManager : MonoBehaviour
 
     //This basically ends up determining the health of the sheep each wave.
     private int timesSpawned = 0;
+
+    //This is going to track the number of sheep killed.  Yes, it's different from the score.
+    public int sheepDefeated = 0;
+
+    //This will be the number of sheep defeated this round. Used to determine if we have defeated the round.
+    public int currentRoundDefeated;
 
     //Oberservable Events.
     //Specifically, this is going to be used when a new round is starting.  Things will listen for this.
@@ -100,15 +121,18 @@ public class GameManager : MonoBehaviour
         //Hide the game over menu in case that's showing.
         gameOverPanel.SetActive(false);
 
+        //Get the sheep spawn locations.
         GetSheepSpawnLocations();
+
+
 
         sheepList = new List<Sheep>();
 
-        StartCoroutine("increaseScoreEachSecond");
-
         isGameOver = false;
+        waveOver = false;
         Time.timeScale = 1;
 
+        StartCoroutine("increaseScoreEachSecond");
         StartCoroutine("UpdateWaveTimer");
         StartCoroutine("TestWave");
         SpawnSheep();
@@ -128,7 +152,21 @@ public class GameManager : MonoBehaviour
             //The escape button has been pressed, so return to the main menu.
             LoadMainMenu();
         }
-    }
+
+        scoreBoard.text = "Score: " + score;
+
+
+        remainingSheepCounter.text = "Remaining Sheep: " + sheepList.Count();
+
+        //Now, we'll do some stuff to see if the wave is over.
+        if(currentRoundDefeated == numSheep && !waveOver)
+        {
+            //Yay!  Round Over!
+            Debug.Log("Round Over!");
+            waveOver = true;
+            StartCoroutine("UpdateWave");
+        }
+}
 
     #region "UI Buttons"
 
@@ -151,6 +189,10 @@ public class GameManager : MonoBehaviour
         //Show the game over screen.
         gameOverPanel.SetActive(true);
         Debug.Log("You have been put to bed.");
+
+        achievementText.text = "Before going to sleep, you fought off " + sheepDefeated + " sheep!";
+        scoreText.text = "Total Score: " + score;
+        waveBoard.text = "Current Wave: " + waveNumber;
     }
 
     /// <summary>
@@ -207,8 +249,9 @@ public class GameManager : MonoBehaviour
     /// <param name="s"></param>
     public static void RemoveSheep(Sheep s)
     {
-        //Increase score.
-        singleton.score += s.points;
+        //Increase number of sheep defated.
+        singleton.sheepDefeated += 1;
+        singleton.currentRoundDefeated += 1;
 
         //Actually remove the sheep.
         //Debug.Log("Here we remove an enemy");
@@ -223,6 +266,17 @@ public class GameManager : MonoBehaviour
             singleton.score += 50;
             //singleton.gameUI.ShowWaveClearBonus();
         }
+    }
+
+    /// <summary>
+    /// This will increase the score.  This was being done inthe RemoveSheep function, but that
+    /// runs even if the sheep suicides, and we don't want to reward that.
+    /// </summary>
+    /// <param name="s">Amount by which to increase the score.</param>
+    public static void IncreaseScore(int s)
+    {
+        //Debug.Log("Increasing the score by " + s + " points.");
+        singleton.score += s;
     }
 
     /// <summary>
@@ -282,7 +336,7 @@ public class GameManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator increaseScoreEachSecond()
     {
-        while (!isGameOver)
+        while (!isGameOver && !waveOver)
         {
             yield return new WaitForSeconds(1);
             score += 1;
@@ -290,31 +344,62 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// This will start a new wave of sheep. It currenlty just runs wave after wave after wave.
-    /// TODO:
-    /// Have waves only run if a wave has been completed.  Currently, I give a bonus just for finishing
-    /// before the next wave.  But this gets overwhelming very quickly.  Might leave it like that, might not.
-    /// </summary>
-    /// <returns></returns>
-    private IEnumerator UpdateWaveTimer()
-    {
-        while (!isGameOver)
-        {
-            yield return new WaitForSeconds(1f);
-            waveCountdown--;
-            //gameUI.SetWaveText(waveCountdown);
+    ///// <summary>
+    ///// This will start a new wave of sheep. It currenlty just runs wave after wave after wave.
+    ///// TODO:
+    ///// Have waves only run if a wave has been completed.  Currently, I give a bonus just for finishing
+    ///// before the next wave.  But this gets overwhelming very quickly.  Might leave it like that, might not.
+    ///// </summary>
+    ///// <returns></returns>
+    //private IEnumerator UpdateWaveTimer()
+    //{
+    //    //I did have this just going ever 10 seconds.  That get's exhausing quickly.
+    //    while (!isGameOvern)
+    //    {
+    //        yield return new WaitForSeconds(1f);
+    //        waveCountdown--;
+    //        //gameUI.SetWaveText(waveCountdown);
 
-            // Spawn next wave and restart count down.
-            if (waveCountdown == 0)
-            {
-                //Increase the sheep count.
-                numSheep = numSheep + 5;
-                SpawnSheep();
-                waveCountdown = 10;
-                //gameUI.ShownewWaveText();
-            }
+    //        // Spawn next wave and restart count down.
+    //        if (waveCountdown == 0)
+    //        {
+    //            //Increase the sheep count.
+    //            numSheep = numSheep + 5;
+    //            SpawnSheep();
+    //            waveCountdown = 10;
+    //            waveOver = false;
+    //            //gameUI.ShownewWaveText();
+    //        }
+    //    }
+    //}
+
+    private IEnumerator UpdateWave()
+    {
+        //Debug.Log("Updating the wave.");
+        waveBoard.text = "Wave complete!";
+
+        //We want to show a countdown in the wave board.  So we'll need a timer check.
+        float waveTimer = Time.time;
+        while (Time.time - waveTimer < waveCountdown)
+        {
+            waveBoard.text = "Next wave in: " + (Time.time - waveTimer);
         }
+        yield return new WaitForSeconds(waveCountdown);
+
+        //First, increase the wave number
+        waveNumber += 1;
+
+        //So, this is a cheesy way of only increasing the number of sheep every three rounds.
+        numSheep = numSheep + ((waveNumber + 3) / 3);
+        SpawnSheep();
+        waveCountdown = 10;
+        waveOver = false;
+
+        //Start the score coroutine again.
+        StartCoroutine("increaseScoreEachSecond");
+
+        //Signal the start of a new round.
+        NewRoundStart();
     }
 
     /// <summary>
