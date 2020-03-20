@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 466af4413dd01af4aaa454f911396325
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: FaceEndJoint
+    100002: HeadTopJoint
+    100004: LeftElbowJoint
+    100006: LeftFootJoint
+    100008: LeftHandJoint
+    100010: LeftHipSocketJoint
+    100012: LeftKneeJoint
+    100014: LeftShoulderJoint
+    100016: MiddleHipJoint
+    100018: MiddleShoulderJoint
+    100020: MiddleSpine
+    100022: NeckBaseJoint
+    100024: RightElbowJoint
+    100026: RightFootJoint
+    100028: RightHandJoint
+    100030: RightHipSocketJoint
+    100032: RightKneeJoint
+    100034: RightShoulderJoint
+    100036: //RootNode
+    100038: TailEndJoint
+    400000: FaceEndJoint
+    400002: HeadTopJoint
+    400004: LeftElbowJoint
+    400006: LeftFootJoint
+    400008: LeftHandJoint
+    400010: LeftHipSocketJoint
+    400012: LeftKneeJoint
+    400014: LeftShoulderJoint
+    400016: MiddleHipJoint
+    400018: MiddleShoulderJoint
+    400020: MiddleSpine
+    400022: NeckBaseJoint
+    400024: RightElbowJoint
+    400026: RightFootJoint
+    400028: RightHandJoint
+    400030: RightHipSocketJoint
+    400032: RightKneeJoint
+    400034: RightShoulderJoint
+    400036: //RootNode
+    400038: TailEndJoint
+    7400000: leaping
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: leaping
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

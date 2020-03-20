@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: dc13b0d384f1b294fb3ba5105c5bb057
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HeadTop
+    100004: LeftAnkleJoint
+    100006: LeftElbowJoint
+    100008: LeftFingerTips
+    100010: LeftFootBallJoint
+    100012: LeftHipJoint
+    100014: LeftKneeJoint
+    100016: LeftKnuckles
+    100018: LeftShoulderJoint
+    100020: LeftToe
+    100022: LeftWrist
+    100024: MainHipJoint
+    100026: NeckBase
+    100028: RightAnkleJoint
+    100030: RightElbowJoint
+    100032: RightFingerTips
+    100034: RightFootBallJoint
+    100036: RightHipJoint
+    100038: RightKneeJoint
+    100040: RightKnuckles
+    100042: RightShoulderJoint
+    100044: RightToe
+    100046: RightWrist
+    100048: ShoulderBlades
+    100050: Spine01
+    100052: Spine02
+    100054: Spine03
+    100056: Spine_05
+    100058: Tail02
+    100060: Tail03
+    100062: Tail04
+    100064: Tail05
+    100066: Tail06
+    100068: Tail07
+    100070: Tail08
+    100072: TailBase
+    100074: TailTip
+    400000: //RootNode
+    400002: HeadTop
+    400004: LeftAnkleJoint
+    400006: LeftElbowJoint
+    400008: LeftFingerTips
+    400010: LeftFootBallJoint
+    400012: LeftHipJoint
+    400014: LeftKneeJoint
+    400016: LeftKnuckles
+    400018: LeftShoulderJoint
+    400020: LeftToe
+    400022: LeftWrist
+    400024: MainHipJoint
+    400026: NeckBase
+    400028: RightAnkleJoint
+    400030: RightElbowJoint
+    400032: RightFingerTips
+    400034: RightFootBallJoint
+    400036: RightHipJoint
+    400038: RightKneeJoint
+    400040: RightKnuckles
+    400042: RightShoulderJoint
+    400044: RightToe
+    400046: RightWrist
+    400048: ShoulderBlades
+    400050: Spine01
+    400052: Spine02
+    400054: Spine03
+    400056: Spine_05
+    400058: Tail02
+    400060: Tail03
+    400062: Tail04
+    400064: Tail05
+    400066: Tail06
+    400068: Tail07
+    400070: Tail08
+    400072: TailBase
+    400074: TailTip
+    7400000: Idle
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

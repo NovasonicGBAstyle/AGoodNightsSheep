@@ -1,0 +1,12 @@
+Updates For GIMM 440:
+20200209
+Added a clip size and reload time.  Dope.  Also, I didn't track my notes well before, but this semester I had to re-implement VR using the new XR stuff.  Pain in the ass if I do say so myself.
+Just another note for how badass I am, I added haptic feedback.  So yeah, you can feel it when you pull the trigger.  You're welcome.
+20200210
+Added a moon.
+Added a starry night sky
+20200211
+Added a treeline.
+Changed the spawn process so that sheep spawn from predetermined points in the game.
+Added a wall behind us so the game stays in front of us
+Changed feedback so that shooting feels different.  Now, it's stronger when you shoot, and when you're empty you get a bit of an empty click feeling.  Yay!

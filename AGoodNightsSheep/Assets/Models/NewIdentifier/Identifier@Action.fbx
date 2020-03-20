@@ -1,0 +1,788 @@
+; FBX 7.1.0 project file
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7100
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2020
+		Month: 2
+		Day: 23
+		Hour: 23
+		Minute: 37
+		Second: 17
+		Millisecond: 518
+	}
+	Creator: "FBX SDK/FBX Plugins version 2020.0"
+	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
+		Type: "UserData"
+		Version: 100
+		MetaData:  {
+			Version: 100
+			Title: ""
+			Subject: ""
+			Author: ""
+			Keywords: ""
+			Revision: ""
+			Comment: ""
+		}
+		Properties70:  {
+			P: "DocumentUrl", "KString", "Url", "", "E:\GIMM\GIMM 440 Digital Portfolio\Personal Game\NewAssets\Identifier\Identifier@Action.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "E:\GIMM\GIMM 440 Digital Portfolio\Personal Game\NewAssets\Identifier\Identifier@Action.fbx"
+			P: "Original", "Compound", "", ""
+			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
+			P: "Original|ApplicationName", "KString", "", "", "Maya"
+			P: "Original|ApplicationVersion", "KString", "", "", "202000"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "24/02/2020 07:37:17.516"
+			P: "Original|FileName", "KString", "", "", "E:\GIMM\GIMM 440 Digital Portfolio\Personal Game\NewAssets\Identifier\Identifier@Action.fbx"
+			P: "LastSaved", "Compound", "", ""
+			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
+			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
+			P: "LastSaved|ApplicationVersion", "KString", "", "", "202000"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "24/02/2020 07:37:17.516"
+			P: "Original|ApplicationActiveProject", "KString", "", "", "E:\GIMM\GIMM 440 Digital Portfolio\Personal Game\NewAssets\Identifier"
+			P: "Original|ApplicationNativeFile", "KString", "", "", "E:\GIMM\GIMM 440 Digital Portfolio\Personal Game\NewAssets\Identifier\Identifier_20200224_0006.mb"
+		}
+	}
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",1
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",11
+		P: "TimeProtocol", "enum", "", "",2
+		P: "SnapOnFrameMode", "enum", "", "",0
+		P: "TimeSpanStart", "KTime", "Time", "",1924423250
+		P: "TimeSpanStop", "KTime", "Time", "",230930790000
+		P: "CustomFrameRate", "double", "Number", "",-1
+		P: "TimeMarker", "Compound", "", ""
+		P: "CurrentTimeMarker", "int", "Integer", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 1359077369248, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 26
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "AnimationStack" {
+		Count: 1
+		PropertyTemplate: "FbxAnimStack" {
+			Properties70:  {
+				P: "Description", "KString", "", "", ""
+				P: "LocalStart", "KTime", "Time", "",0
+				P: "LocalStop", "KTime", "Time", "",0
+				P: "ReferenceStart", "KTime", "Time", "",0
+				P: "ReferenceStop", "KTime", "Time", "",0
+			}
+		}
+	}
+	ObjectType: "AnimationLayer" {
+		Count: 1
+		PropertyTemplate: "FbxAnimLayer" {
+			Properties70:  {
+				P: "Weight", "Number", "", "A",100
+				P: "Mute", "bool", "", "",0
+				P: "Solo", "bool", "", "",0
+				P: "Lock", "bool", "", "",0
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BlendMode", "enum", "", "",0
+				P: "RotationAccumulationMode", "enum", "", "",0
+				P: "ScaleAccumulationMode", "enum", "", "",0
+				P: "BlendModeBypass", "ULongLong", "", "",0
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 1
+		PropertyTemplate: "FbxSurfaceLambert" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Lambert"
+				P: "MultiLayer", "bool", "", "",0
+				P: "EmissiveColor", "Color", "", "A",0,0,0
+				P: "EmissiveFactor", "Number", "", "A",1
+				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
+				P: "AmbientFactor", "Number", "", "A",1
+				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
+				P: "DiffuseFactor", "Number", "", "A",1
+				P: "Bump", "Vector3D", "Vector", "",0,0,0
+				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
+				P: "BumpFactor", "double", "Number", "",1
+				P: "TransparentColor", "Color", "", "A",0,0,0
+				P: "TransparencyFactor", "Number", "", "A",0
+				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "DisplacementFactor", "double", "Number", "",1
+				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "VectorDisplacementFactor", "double", "Number", "",1
+			}
+		}
+	}
+	ObjectType: "Model" {
+		Count: 2
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "TranslationMin", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMax", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMinX", "bool", "", "",0
+				P: "TranslationMinY", "bool", "", "",0
+				P: "TranslationMinZ", "bool", "", "",0
+				P: "TranslationMaxX", "bool", "", "",0
+				P: "TranslationMaxY", "bool", "", "",0
+				P: "TranslationMaxZ", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "RotationSpaceForLimitOnly", "bool", "", "",0
+				P: "RotationStiffnessX", "double", "Number", "",0
+				P: "RotationStiffnessY", "double", "Number", "",0
+				P: "RotationStiffnessZ", "double", "Number", "",0
+				P: "AxisLen", "double", "Number", "",10
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "RotationActive", "bool", "", "",0
+				P: "RotationMin", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMax", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMinX", "bool", "", "",0
+				P: "RotationMinY", "bool", "", "",0
+				P: "RotationMinZ", "bool", "", "",0
+				P: "RotationMaxX", "bool", "", "",0
+				P: "RotationMaxY", "bool", "", "",0
+				P: "RotationMaxZ", "bool", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "ScalingMin", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingMax", "Vector3D", "Vector", "",1,1,1
+				P: "ScalingMinX", "bool", "", "",0
+				P: "ScalingMinY", "bool", "", "",0
+				P: "ScalingMinZ", "bool", "", "",0
+				P: "ScalingMaxX", "bool", "", "",0
+				P: "ScalingMaxY", "bool", "", "",0
+				P: "ScalingMaxZ", "bool", "", "",0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "MinDampRangeX", "double", "Number", "",0
+				P: "MinDampRangeY", "double", "Number", "",0
+				P: "MinDampRangeZ", "double", "Number", "",0
+				P: "MaxDampRangeX", "double", "Number", "",0
+				P: "MaxDampRangeY", "double", "Number", "",0
+				P: "MaxDampRangeZ", "double", "Number", "",0
+				P: "MinDampStrengthX", "double", "Number", "",0
+				P: "MinDampStrengthY", "double", "Number", "",0
+				P: "MinDampStrengthZ", "double", "Number", "",0
+				P: "MaxDampStrengthX", "double", "Number", "",0
+				P: "MaxDampStrengthY", "double", "Number", "",0
+				P: "MaxDampStrengthZ", "double", "Number", "",0
+				P: "PreferedAngleX", "double", "Number", "",0
+				P: "PreferedAngleY", "double", "Number", "",0
+				P: "PreferedAngleZ", "double", "Number", "",0
+				P: "LookAtProperty", "object", "", ""
+				P: "UpVectorProperty", "object", "", ""
+				P: "Show", "bool", "", "",1
+				P: "NegativePercentShapeSupport", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "NodeAttribute" {
+		Count: 1
+		PropertyTemplate: "FbxSkeleton" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Size", "double", "Number", "",100
+				P: "LimbLength", "double", "Number", "H",1
+			}
+		}
+	}
+	ObjectType: "AnimationCurveNode" {
+		Count: 5
+		PropertyTemplate: "FbxAnimCurveNode" {
+			Properties70:  {
+				P: "d", "Compound", "", ""
+			}
+		}
+	}
+	ObjectType: "AnimationCurve" {
+		Count: 10
+	}
+	ObjectType: "Pose" {
+		Count: 1
+	}
+	ObjectType: "Deformer" {
+		Count: 2
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Geometry: 1357387677136, "Geometry::", "Mesh" {
+		Vertices: *15 {
+			a: 2.23517417907715e-08,-0.5,0,-0.5,0.27324515581131,0.5,0.5,0.27324515581131,0.5,-0.5,0.27324515581131,-0.5,0.5,0.27324515581131,-0.5
+		} 
+		PolygonVertexIndex: *16 {
+			a: 0,2,-2,1,2,4,-4,3,4,-1,0,4,-3,0,1,-4
+		} 
+		Edges: *8 {
+			a: 1,5,2,0,6,4,9,8
+		} 
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *48 {
+				a: 0,-0.542994737625122,0.839736044406891,0,-0.542994797229767,0.839736044406891,0,-0.542994797229767,0.839736044406891,0,1,0,0,1,0,0,1,0,0,1,0,0,-0.542994797229767,-0.839736044406891,0,-0.542994797229767,-0.839736044406891,0,-0.542994737625122,-0.839736044406891,0.83973616361618,-0.542994737625122,0,0.83973616361618,-0.542994797229767,0,0.83973616361618,-0.542994797229767,0,-0.839736104011536,-0.542994737625122,0,-0.83973616361618,-0.542994797229767,0,-0.83973616361618,-0.542994797229767,0
+			} 
+		}
+		LayerElementUV: 0 {
+			Version: 101
+			Name: "map1"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "IndexToDirect"
+			UV: *16 {
+				a: 0.5,0,0.375,0.25,0.625,0.25,0.375,0.5,0.625,0.5,0.5,0.875,0.875,0.25,0.125,0.25
+			} 
+			UVIndex: *16 {
+				a: 0,2,1,1,2,4,3,3,4,5,0,6,2,0,1,7
+			} 
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "AllSame"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: *1 {
+				a: 0
+			} 
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
+				TypedIndex: 0
+			}
+		}
+	}
+	NodeAttribute: 1357446540464, "NodeAttribute::", "LimbNode" {
+		Properties70:  {
+			P: "Size", "double", "Number", "",16.6666666666667
+		}
+		TypeFlags: "Skeleton"
+	}
+	Model: 1357542728176, "Model::pCube1", "Mesh" {
+		Version: 232
+		Properties70:  {
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "AL7",0,3,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "AL7",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "AL7",1,1,1
+			P: "currentUVSet", "KString", "", "U", "map1"
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Model: 1357542739776, "Model::joint1", "LimbNode" {
+		Version: 232
+		Properties70:  {
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A+",0,3.5,0
+			P: "lockInfluenceWeights", "Bool", "", "A+U",0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Pose: 1357368772912, "Pose::skinCluster1", "BindPose" {
+		Type: "BindPose"
+		Version: 100
+		NbPoseNodes: 2
+		PoseNode:  {
+			Node: 1357542728176
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,3,0,1
+			} 
+		}
+		PoseNode:  {
+			Node: 1357542739776
+			Matrix: *16 {
+				a: 1,0,0,0,0,1,0,0,0,0,1,0,0,2.97919720419024,-0.0131435170775321,1
+			} 
+		}
+	}
+	Material: 1357529699696, "Material::lambert1", "" {
+		Version: 102
+		ShadingModel: "lambert"
+		MultiLayer: 0
+		Properties70:  {
+			P: "AmbientColor", "Color", "", "A",0,0,0
+			P: "DiffuseColor", "Color", "", "A",0.5,0.5,0.5
+			P: "DiffuseFactor", "Number", "", "A",0.800000011920929
+			P: "TransparencyFactor", "Number", "", "A",1
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",0,0,0
+			P: "Diffuse", "Vector3D", "Vector", "",0.400000005960464,0.400000005960464,0.400000005960464
+			P: "Opacity", "double", "Number", "",1
+		}
+	}
+	Deformer: 1357368774496, "Deformer::", "Skin" {
+		Version: 101
+		Link_DeformAcuracy: 50
+	}
+	Deformer: 1358536427264, "SubDeformer::", "Cluster" {
+		Version: 100
+		UserData: "", ""
+		Indexes: *5 {
+			a: 0,1,2,3,4
+		} 
+		Weights: *5 {
+			a: 1,1,1,1,1
+		} 
+		Transform: *16 {
+			a: 1,0,0,0,0,1,0,0,0,0,1,0,0,0.0208027958097619,0.0131435170775321,1
+		} 
+		TransformLink: *16 {
+			a: 1,0,0,0,-0,1,0,0,0,-0,1,0,0,2.97919720419024,-0.0131435170775321,1
+		} 
+	}
+	AnimationStack: 1357521429920, "AnimStack::Take 001", "" {
+		Properties70:  {
+			P: "LocalStart", "KTime", "Time", "",1924423250
+			P: "LocalStop", "KTime", "Time", "",230930790000
+			P: "ReferenceStart", "KTime", "Time", "",1924423250
+			P: "ReferenceStop", "KTime", "Time", "",230930790000
+		}
+	}
+	AnimationCurve: 1357451667536, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451671856, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451669616, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 3.5,3.489544,3.459162,3.410328,3.34452,3.263213,3.167883,3.060007,2.94106,2.812518,2.675858,2.532556,2.384087,2.231928,2.077555,1.922445,1.768072,1.615913,1.467444,1.324142,1.187482,1.058941,0.9399934,0.832117,0.7367871,0.6554799,0.5896716,0.5408381,0.5104555,0.5,0.5097778,0.5382222,0.584,0.6457778,0.7222222,0.812,0.9137778,1.026222,1.148,1.277778,1.414222,1.556,1.701778,1.850222,2,2.149778,2.298222,2.444,2.585778,2.722222,2.852,2.973778,3.086222,3.188,3.277778,3.354222,3.416,3.461778,3.490222,3.5,3.490222,3.461778,3.416,3.354222,3.277778,3.188,3.086222,2.973778,2.852,2.722222,2.585778,2.444,2.298222,2.149778,2,1.850222,1.701778,1.556,1.414222,1.277778,1.148,1.026222,0.9137778,0.812,0.7222222,0.6457778,0.584,0.5382222,0.5097778,0.5,0.5097778,0.5382222,0.584,0.6457778,0.7222222,0.812,0.9137778,1.026222,1.148,1.277778,1.414222,1.556,1.701778,1.850222,2,2.149778,2.298222,2.444,2.585778,2.722222,2.852,2.973778,3.086222,3.188,3.277778,3.354222,3.416,3.461778,3.490222,3.5
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,-0.490056,4.099946e-31,0,-0.490056,-0.950592,4.099946e-31,0,-0.950592,-1.375703,4.099946e-31,0,-1.375703,-1.765386,4.099946e-31,0,-1.765386,-2.119643,4.099946e-31,0,-2.119643,-2.438476,4.099946e-31,0,-2.438476,-2.721883,4.099946e-31,0,-2.721883,-2.969865,4.099946e-31,0,-2.969865,-3.182419,4.099946e-31,0,-3.182419,-3.359548,4.099946e-31,0,-3.359548,-3.501251,4.099946e-31,0,-3.501251,-3.607527,4.099946e-31,0,-3.607527,-3.67838,4.099946e-31,0,-3.67838,-3.713805,4.099946e-31,0,-3.713805,-3.713805,4.099946e-31,0,-3.713805,-3.67838,4.099946e-31,0,-3.67838,-3.607528,4.099946e-31,0,-3.607528,-3.501251,4.099946e-31,0,-3.501251,-3.359546,4.099946e-31,0,-3.359546,-3.182417,4.099946e-31,0,-3.182417,-2.969864,4.099946e-31,0,-2.969864,-2.721883,4.099946e-31,0,-2.721883,-2.438476,4.099946e-31,0,-2.438476,-2.119645,4.099946e-31,0,-2.119645,-1.765386,4.099946e-31,0,-1.765386,-1.375702,4.099946e-31,0,-1.375702,-0.950592,4.099946e-31,0,-0.950592,-0.4900568,4.099946e-31,0,-0.4900568,0,4.099946e-31,0,0,0.4586663,4.099946e-31,0,0.4586663,0.8906665,4.099946e-31,0,0.8906665,1.290667,4.099946e-31,0,1.290667,1.658667,4.099946e-31,0,1.658667,1.994667,4.099946e-31,0,1.994667,2.298667,4.099946e-31,0,2.298667,2.570667,4.099946e-31,0,2.570667,2.810667,4.099946e-31,0,2.810667,3.018667,4.099946e-31,0,3.018667,3.194667,4.099946e-31,0,3.194667,3.338666,4.099946e-31,0,3.338666,3.450667,4.099946e-31,0,3.450667,3.530667,4.099946e-31,0,3.530667,3.578666,4.099946e-31,0,3.578666,3.594668,4.099946e-31,0,3.594668,3.578668,4.099946e-31,0,3.578668,3.530665,4.099946e-31,0,3.530665,3.450665,4.099946e-31,0,3.450665,3.338668,4.099946e-31,0,3.338668,3.194667,4.099946e-31,0,3.194667,3.018665,4.099946e-31,0,3.018665,2.810666,4.099946e-31,0,2.810666,2.570666,4.099946e-31,0,2.570666,2.298666,4.099946e-31,0,2.298666,1.994668,4.099946e-31,0,1.994668,1.658667,4.099946e-31,0,1.658667,1.290665,4.099946e-31,0,1.290665,0.8906679,4.099946e-31,0,0.8906679,0.4586678,4.099946e-31,0,0.4586678,0,4.099946e-31,0,0,-0.4586678,4.099946e-31,0,-0.4586678,-0.8906679,
+4.099946e-31,0,-0.8906679,-1.290665,4.099946e-31,0,-1.290665,-1.658667,4.099946e-31,0,-1.658667,-1.994668,4.099946e-31,0,-1.994668,-2.298666,4.099946e-31,0,-2.298666,-2.570666,4.099946e-31,0,-2.570666,-2.810666,4.099946e-31,0,-2.810666,-3.018665,4.099946e-31,0,-3.018665,-3.194667,4.099946e-31,0,-3.194667,-3.338668,4.099946e-31,0,-3.338668,-3.450665,4.099946e-31,0,-3.450665,-3.530665,4.099946e-31,0,-3.530665,-3.578668,4.099946e-31,0,-3.578668,-3.594668,4.099946e-31,0,-3.594668,-3.578666,4.099946e-31,0,-3.578666,-3.530667,4.099946e-31,0,-3.530667,-3.450667,4.099946e-31,0,-3.450667,-3.338666,4.099946e-31,0,-3.338666,-3.194667,4.099946e-31,0,-3.194667,-3.018667,4.099946e-31,0,-3.018667,-2.810667,4.099946e-31,0,-2.810667,-2.570667,4.099946e-31,0,-2.570667,-2.298667,4.099946e-31,0,-2.298667,-1.994667,4.099946e-31,0,-1.994667,-1.658667,4.099946e-31,0,-1.658667,-1.290667,4.099946e-31,0,-1.290667,-0.8906665,4.099946e-31,0,-0.8906665,-0.4586663,4.099946e-31,0,-0.4586663,0,4.099946e-31,0,0,0.4586663,4.099946e-31,0,0.4586663,0.8906665,4.099946e-31,0,0.8906665,1.290667,4.099946e-31,0,1.290667,1.658667,4.099946e-31,0,1.658667,1.994667,4.099946e-31,0,1.994667,2.298667,4.099946e-31,0,2.298667,2.570667,4.099946e-31,0,2.570667,2.810667,4.099946e-31,0,2.810667,3.018667,4.099946e-31,0,3.018667,3.194667,4.099946e-31,0,3.194667,3.338666,4.099946e-31,0,3.338666,3.450667,4.099946e-31,0,3.450667,3.530667,4.099946e-31,0,3.530667,3.578666,4.099946e-31,0,3.578666,3.594668,4.099946e-31,0,3.594668,3.578668,4.099946e-31,0,3.578668,3.530665,4.099946e-31,0,3.530665,3.450665,4.099946e-31,0,3.450665,3.338668,4.099946e-31,0,3.338668,3.194667,4.099946e-31,0,3.194667,3.018665,4.099946e-31,0,3.018665,2.810666,4.099946e-31,0,2.810666,2.570666,4.099946e-31,0,2.570666,2.298666,4.099946e-31,0,2.298666,1.994668,4.099946e-31,0,1.994668,1.658667,4.099946e-31,0,1.658667,1.290665,4.099946e-31,0,1.290665,0.8906679,4.099946e-31,0,0.8906679,0.4586678,4.099946e-31,0,0.4586678,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451671376, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451666736, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451667856, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451668336, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451671216, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451672176, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 0,5.9638,11.96797,18.00996,24.08721,30.19716,36.33726,42.50494,48.69767,54.91286,61.14798,67.40047,73.66776,79.9473,86.23653,92.53291,98.83386,105.1368,111.4393,117.7387,124.0324,130.3179,136.5926,142.8541,149.0997,155.3268,161.533,167.7156,173.8721,180,186.1036,192.1899,198.2598,204.3146,210.3553,216.3829,222.3987,228.4036,234.3988,240.3855,246.3646,252.3373,258.3047,264.2678,270.2278,276.1859,282.1429,288.1002,294.0587,300.0196,305.9839,311.9529,317.9274,323.9088,329.8979,335.8961,341.9042,347.9235,353.9551,360,366.0509,372.0996,378.146,384.19,390.2313,396.2699,402.3056,408.3383,414.3677,420.3939,426.4166,432.4357,438.451,444.4625,450.4699,456.4731,462.4721,468.4666,474.4564,480.4415,486.4217,492.3969,498.3669,504.3316,510.2908,516.2444,522.1923,528.1343,534.0703,540,545.9378,551.8968,557.8751,563.8709,569.8824,575.908,581.9456,587.9935,594.0499,600.113,606.181,612.2521,618.3245,624.3963,630.4658,636.5312,642.5906,648.6423,654.6844,660.7151,666.7327,672.7353,678.7211,684.6883,690.6351,696.5597,702.4603,708.3351,714.1823,720
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,143.6157,4.099946e-31,0,143.6157,144.5539,4.099946e-31,0,144.5539,145.4308,4.099946e-31,0,145.4308,146.2464,4.099946e-31,0,146.2464,147.0006,4.099946e-31,0,147.0006,147.6934,4.099946e-31,0,147.6934,148.3249,4.099946e-31,0,148.3249,148.8951,4.099946e-31,0,148.8951,149.4038,4.099946e-31,0,149.4038,149.8512,4.099946e-31,0,149.8512,150.2373,4.099946e-31,0,150.2373,150.562,4.099946e-31,0,150.562,150.8253,4.099946e-31,0,150.8253,151.0273,4.099946e-31,0,151.0273,151.1679,4.099946e-31,0,151.1679,151.2472,4.099946e-31,0,151.2472,151.2652,4.099946e-31,0,151.2652,151.2218,4.099946e-31,0,151.2218,151.1169,4.099946e-31,0,151.1169,150.9508,4.099946e-31,0,150.9508,150.7232,4.099946e-31,0,150.7232,150.4343,4.099946e-31,0,150.4343,150.0842,4.099946e-31,0,150.0842,149.6728,4.099946e-31,0,149.6728,149.1998,4.099946e-31,0,149.1998,148.6653,4.099946e-31,0,148.6653,148.0699,4.099946e-31,0,148.0699,147.4129,4.099946e-31,0,147.4129,146.7781,4.099946e-31,0,146.7781,146.2787,4.099946e-31,0,146.2787,145.8745,4.099946e-31,0,145.8745,145.4965,4.099946e-31,0,145.4965,145.145,4.099946e-31,0,145.145,144.8198,4.099946e-31,0,144.8198,144.5209,4.099946e-31,0,144.5209,144.2483,4.099946e-31,0,144.2483,144.0022,4.099946e-31,0,144.0022,143.7825,4.099946e-31,0,143.7825,143.5889,4.099946e-31,0,143.5889,143.4216,4.099946e-31,0,143.4216,143.2808,4.099946e-31,0,143.2808,143.1665,4.099946e-31,0,143.1665,143.0782,4.099946e-31,0,143.0782,143.0164,4.099946e-31,0,143.0164,142.9812,4.099946e-31,0,142.9812,142.972,4.099946e-31,0,142.972,142.9893,4.099946e-31,0,142.9893,143.0328,4.099946e-31,0,143.0328,143.1028,4.099946e-31,0,143.1028,143.1991,4.099946e-31,0,143.1991,143.3218,4.099946e-31,0,143.3218,143.4708,4.099946e-31,0,143.4708,143.6459,4.099946e-31,0,143.6459,143.8477,4.099946e-31,0,143.8477,144.0754,4.099946e-31,0,144.0754,144.3296,4.099946e-31,0,144.3296,144.6108,4.099946e-31,0,144.6108,144.9177,4.099946e-31,0,144.9177,145.1495,4.099946e-31,0,145.1495,145.1957,4.099946e-31,0,145.1957,145.1415,4.099946e-31,0,145.1415,145.084,4.099946e-31,0,
+145.084,145.0232,4.099946e-31,0,145.0232,144.9591,4.099946e-31,0,144.9591,144.8914,4.099946e-31,0,144.8914,144.8203,4.099946e-31,0,144.8203,144.746,4.099946e-31,0,144.746,144.6676,4.099946e-31,0,144.6676,144.5863,4.099946e-31,0,144.5863,144.5017,4.099946e-31,0,144.5017,144.4131,4.099946e-31,0,144.4131,144.3215,4.099946e-31,0,144.3215,144.2267,4.099946e-31,0,144.2267,144.1278,4.099946e-31,0,144.1278,144.026,4.099946e-31,0,144.026,143.9209,4.099946e-31,0,143.9209,143.8118,4.099946e-31,0,143.8118,143.6993,4.099946e-31,0,143.6993,143.584,4.099946e-31,0,143.584,143.465,4.099946e-31,0,143.465,143.3423,4.099946e-31,0,143.3423,143.2163,4.099946e-31,0,143.2163,143.087,4.099946e-31,0,143.087,142.9541,4.099946e-31,0,142.9541,142.8179,4.099946e-31,0,142.8179,142.678,4.099946e-31,0,142.678,142.5352,4.099946e-31,0,142.5352,142.3887,4.099946e-31,0,142.3887,142.4106,4.099946e-31,0,142.4106,142.7615,4.099946e-31,0,142.7615,143.2471,4.099946e-31,0,143.2471,143.6895,4.099946e-31,0,143.6895,144.0886,4.099946e-31,0,144.0886,144.4446,4.099946e-31,0,144.4446,144.7573,4.099946e-31,0,144.7573,145.0261,4.099946e-31,0,145.0261,145.2517,4.099946e-31,0,145.2517,145.4341,4.099946e-31,0,145.4341,145.574,4.099946e-31,0,145.574,145.6692,4.099946e-31,0,145.6692,145.7212,4.099946e-31,0,145.7212,145.7307,4.099946e-31,0,145.7307,145.6963,4.099946e-31,0,145.6963,145.6187,4.099946e-31,0,145.6187,145.4971,4.099946e-31,0,145.4971,145.333,4.099946e-31,0,145.333,145.1257,4.099946e-31,0,145.1257,144.8738,4.099946e-31,0,144.8738,144.5793,4.099946e-31,0,144.5793,144.2424,4.099946e-31,0,144.2424,143.8608,4.099946e-31,0,143.8608,143.436,4.099946e-31,0,143.436,142.9688,4.099946e-31,0,142.9688,142.4568,4.099946e-31,0,142.4568,141.9023,4.099946e-31,0,141.9023,141.3047,4.099946e-31,0,141.3047,140.6631,4.099946e-31,0,140.6631,139.979,4.099946e-31,0,139.979,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurve: 1357451670896, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4007
+		KeyTime: *120 {
+			a: 1924423250,3848846500,5773269750,7697693000,9622116250,11546539500,13470962750,15395386000,17319809250,19244232500,21168655750,23093079000,25017502250,26941925500,28866348750,30790772000,32715195250,34639618500,36564041750,38488465000,40412888250,42337311500,44261734750,46186158000,48110581250,50035004500,51959427750,53883851000,55808274250,57732697500,59657120750,61581544000,63505967250,65430390500,67354813750,69279237000,71203660250,73128083500,75052506750,76976930000,78901353250,80825776500,82750199750,84674623000,86599046250,88523469500,90447892750,92372316000,94296739250,96221162500,98145585750,100070009000,101994432250,103918855500,105843278750,107767702000,109692125250,111616548500,113540971750,115465395000,117389818250,119314241500,121238664750,123163088000,125087511250,127011934500,128936357750,130860781000,132785204250,134709627500,136634050750,138558474000,140482897250,142407320500,144331743750,146256167000,148180590250,150105013500,152029436750,153953860000,155878283250,157802706500,159727129750,161651553000,163575976250,165500399500,167424822750,169349246000,171273669250,173198092500,175122515750,177046939000,178971362250,180895785500,182820208750,184744632000,186669055250,188593478500,190517901750,192442325000,194366748250,196291171500,198215594750,200140018000,202064441250,203988864500,205913287750,207837711000,209762134250,211686557500,213610980750,215535404000,217459827250,219384250500,221308673750,223233097000,225157520250,227081943500,229006366750,230930790000
+		} 
+		KeyValueFloat: *120 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, 
+		;Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser, Cubic|TangeantUser
+		KeyAttrFlags: *120 {
+			a: 1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032,1032
+		} 
+		KeyAttrDataFloat: *480 {
+			a: 0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,
+0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0,0,0,4.099946e-31,0
+		} 
+		KeyAttrRefCount: *120 {
+			a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+		} 
+	}
+	AnimationCurveNode: 1357521426800, "AnimCurveNode::lockInfluenceWeights", "" {
+		Properties70:  {
+			P: "d|lockInfluenceWeights", "Bool", "", "A",0
+		}
+	}
+	AnimationCurveNode: 1357521430544, "AnimCurveNode::Visibility", "" {
+		Properties70:  {
+			P: "d|Visibility", "Visibility", "", "A",1
+		}
+	}
+	AnimationCurveNode: 1357521431376, "AnimCurveNode::T", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",3.5
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurveNode: 1357521424928, "AnimCurveNode::S", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",1
+			P: "d|Y", "Number", "", "A",1
+			P: "d|Z", "Number", "", "A",1
+		}
+	}
+	AnimationCurveNode: 1357521427008, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationLayer: 1359079416784, "AnimLayer::BaseLayer", "" {
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::pCube1, Model::RootNode
+	C: "OO",1357542728176,0
+	
+	;Model::joint1, Model::RootNode
+	C: "OO",1357542739776,0
+	
+	;AnimLayer::BaseLayer, AnimStack::Take 001
+	C: "OO",1359079416784,1357521429920
+	
+	;AnimCurveNode::lockInfluenceWeights, AnimLayer::BaseLayer
+	C: "OO",1357521426800,1359079416784
+	
+	;AnimCurveNode::Visibility, AnimLayer::BaseLayer
+	C: "OO",1357521430544,1359079416784
+	
+	;AnimCurveNode::T, AnimLayer::BaseLayer
+	C: "OO",1357521431376,1359079416784
+	
+	;AnimCurveNode::S, AnimLayer::BaseLayer
+	C: "OO",1357521424928,1359079416784
+	
+	;AnimCurveNode::R, AnimLayer::BaseLayer
+	C: "OO",1357521427008,1359079416784
+	
+	;Deformer::, Geometry::
+	C: "OO",1357368774496,1357387677136
+	
+	;Geometry::, Model::pCube1
+	C: "OO",1357387677136,1357542728176
+	
+	;Material::lambert1, Model::pCube1
+	C: "OO",1357529699696,1357542728176
+	
+	;NodeAttribute::, Model::joint1
+	C: "OO",1357446540464,1357542739776
+	
+	;AnimCurveNode::T, Model::joint1
+	C: "OP",1357521431376,1357542739776, "Lcl Translation"
+	
+	;AnimCurveNode::R, Model::joint1
+	C: "OP",1357521427008,1357542739776, "Lcl Rotation"
+	
+	;AnimCurveNode::S, Model::joint1
+	C: "OP",1357521424928,1357542739776, "Lcl Scaling"
+	
+	;AnimCurveNode::Visibility, Model::joint1
+	C: "OP",1357521430544,1357542739776, "Visibility"
+	
+	;AnimCurveNode::lockInfluenceWeights, Model::joint1
+	C: "OP",1357521426800,1357542739776, "lockInfluenceWeights"
+	
+	;AnimCurve::, AnimCurveNode::Visibility
+	C: "OP",1357451667536,1357521430544, "d|Visibility"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1357451671856,1357521431376, "d|X"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1357451669616,1357521431376, "d|Y"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1357451671376,1357521431376, "d|Z"
+	
+	;AnimCurve::, AnimCurveNode::S
+	C: "OP",1357451666736,1357521424928, "d|X"
+	
+	;AnimCurve::, AnimCurveNode::S
+	C: "OP",1357451667856,1357521424928, "d|Y"
+	
+	;AnimCurve::, AnimCurveNode::S
+	C: "OP",1357451668336,1357521424928, "d|Z"
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",1357451671216,1357521427008, "d|X"
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",1357451672176,1357521427008, "d|Y"
+	
+	;AnimCurve::, AnimCurveNode::R
+	C: "OP",1357451670896,1357521427008, "d|Z"
+	
+	;SubDeformer::, Deformer::
+	C: "OO",1358536427264,1357368774496
+	
+	;Model::joint1, SubDeformer::
+	C: "OO",1357542739776,1358536427264
+}
+;Takes section
+;----------------------------------------------------
+
+Takes:  {
+	Current: "Take 001"
+	Take: "Take 001" {
+		FileName: "Take_001.tak"
+		LocalTime: 1924423250,230930790000
+		ReferenceTime: 1924423250,230930790000
+	}
+}
